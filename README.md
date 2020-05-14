@@ -18,7 +18,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com//.git"
+      "url": "https://github.com/Ilinaya/smsflow-php-client.git"
     }
   ],
   "require": {
@@ -73,68 +73,17 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://cloud.smsflow.ilinaya.com/api*
-
-Class | Method | HTTP request | Description
------------- | ------------- | ------------- | -------------
-*AuthorizeApi* | [**authorizePost**](docs/Api/AuthorizeApi.md#authorizepost) | **POST** /authorize | Get BEARER token
-*CallerIdsApi* | [**callerIdsGet**](docs/Api/CallerIdsApi.md#calleridsget) | **GET** /callerIds | Retrieve your caller IDs
-*DidsApi* | [**didsAvailableGet**](docs/Api/DidsApi.md#didsavailableget) | **GET** /dids/available | Retrieve available for purchase
-*DidsApi* | [**didsBuyPost**](docs/Api/DidsApi.md#didsbuypost) | **POST** /dids/buy | Purchase virutal number
-*DidsApi* | [**didsGet**](docs/Api/DidsApi.md#didsget) | **GET** /dids | Retrieve your virtual numbers
-*DidsApi* | [**didsSetcallbackPost**](docs/Api/DidsApi.md#didssetcallbackpost) | **POST** /dids/setcallback | Set HTTP callback for inbound SMS
-*MessagesApi* | [**messagesGet**](docs/Api/MessagesApi.md#messagesget) | **GET** /messages | Retrieve sent and recieved messages
-*MessagesApi* | [**messagesSendPost**](docs/Api/MessagesApi.md#messagessendpost) | **POST** /messages/send | Send Messages
-*MessagesApi* | [**messagesStatusMessageIdGet**](docs/Api/MessagesApi.md#messagesstatusmessageidget) | **GET** /messages/status/{messageId} | Retrieve message
-*PackagesApi* | [**packagesBuyPost**](docs/Api/PackagesApi.md#packagesbuypost) | **POST** /packages/buy | Purchase sms package
-*PackagesApi* | [**packagesGet**](docs/Api/PackagesApi.md#packagesget) | **GET** /packages | Retrieve available packages
-*PackagesApi* | [**packagesHistoryGet**](docs/Api/PackagesApi.md#packageshistoryget) | **GET** /packages/history | Get sms package number purchase history
-*UsersApi* | [**usersBalanceGet**](docs/Api/UsersApi.md#usersbalanceget) | **GET** /users/balance | Retrieve financial information
-
-
-## Documentation For Models
-
- - [AvailavbleCallerIdItem](docs/Model/AvailavbleCallerIdItem.md)
- - [AvailavbleDidItem](docs/Model/AvailavbleDidItem.md)
- - [AvailavleDidResponse](docs/Model/AvailavleDidResponse.md)
- - [BalanceResponse](docs/Model/BalanceResponse.md)
- - [CallerIdsResponse](docs/Model/CallerIdsResponse.md)
- - [Did](docs/Model/Did.md)
- - [DidDid](docs/Model/DidDid.md)
- - [DidPurchaseRequest](docs/Model/DidPurchaseRequest.md)
- - [DidPurchaseResponse](docs/Model/DidPurchaseResponse.md)
- - [DidPurchaseResponseDid](docs/Model/DidPurchaseResponseDid.md)
- - [DidResponse](docs/Model/DidResponse.md)
- - [DidResponseInfo](docs/Model/DidResponseInfo.md)
- - [DidSetCallbackRequest](docs/Model/DidSetCallbackRequest.md)
- - [DidSetCallbackResponse](docs/Model/DidSetCallbackResponse.md)
- - [Message](docs/Model/Message.md)
- - [MessageSendRequest](docs/Model/MessageSendRequest.md)
- - [MessageSendResponse](docs/Model/MessageSendResponse.md)
- - [MessageSendResponseMessageItem](docs/Model/MessageSendResponseMessageItem.md)
- - [MessageStatusResponse](docs/Model/MessageStatusResponse.md)
- - [MessagesResponse](docs/Model/MessagesResponse.md)
- - [Package](docs/Model/Package.md)
- - [PackagePurchaseHistoryResponse](docs/Model/PackagePurchaseHistoryResponse.md)
- - [PackagePurchaseRequest](docs/Model/PackagePurchaseRequest.md)
- - [PackagePurchaseResponse](docs/Model/PackagePurchaseResponse.md)
- - [PackagesResponse](docs/Model/PackagesResponse.md)
- - [PurchaseHistoryItem](docs/Model/PurchaseHistoryItem.md)
- - [PurchaseHistoryItemDid](docs/Model/PurchaseHistoryItemDid.md)
- - [PurchaseHistoryItemOrganizationUser](docs/Model/PurchaseHistoryItemOrganizationUser.md)
- - [PurchaseHistoryItemPackage](docs/Model/PurchaseHistoryItemPackage.md)
- - [TokenRequest](docs/Model/TokenRequest.md)
- - [TokenResponse](docs/Model/TokenResponse.md)
- - [User](docs/Model/User.md)
-
-
 ## Documentation For Authorization
+
+Visit  [Documentation page](https://smsflow.ilinaya.com/docs) to get API reference
+
+Register at  [SMSFlow portal](https://cloud.smsflow.ilinaya.com/) to get API key
 
 
 ## apiKey
 
 - **Type**: API key
-- **API key parameter name**: Authorization
+- **API key parameter name**: Authorization: Bearer <API_KEY>
 - **Location**: HTTP header
 
 

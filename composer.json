@@ -2,17 +2,16 @@
     "name": "/",
     "description": "",
     "keywords": [
-        "swagger",
-        "php",
-        "sdk",
+        "ilinaya",
+        "sms",
         "api"
     ],
     "homepage": "https://smsflow.ilinaya.com",
     "license": "proprietary",
     "authors": [
         {
-            "name": "Swagger and contributors",
-            "homepage": "https://github.com/swagger-api/swagger-codegen"
+            "name": "Ilinaya",
+            "homepage": "https://ilinaya.com/"
         }
     ],
     "require": {
